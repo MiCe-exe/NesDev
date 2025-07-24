@@ -1,0 +1,5 @@
+ca65
+------------------------------------------
+> ca65 name.asm -o name.o   // Link
+> ld65 name.o -o name.nes -C nes.cfg    // Compile
+

@@ -17,7 +17,7 @@
 ;; PRG-ROm code located at $8000
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 .segment "CODE"
-;.org $8000
+.org $8000
 ; Todo: add code of PRG-ROM
 
 Reset:
@@ -26,8 +26,8 @@ Reset:
     ldx #$FF
     txs                     ; initialize the stack pointer at $01FF
 
-    lda #0                  ; A = 0
-    ldx #$FF                ; X = $FF
+    lda #$0                 ; A = 0
+    ldx #$0                 ; X = 0
 MemLoop:
     sta $0,x                ; Store the value of A (zero) into $0+x
     dex                     ; X--
